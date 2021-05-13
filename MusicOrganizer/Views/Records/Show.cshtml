@@ -1,1 +1,6 @@
-<h1>This is the Records Show Page...</h1>
+@using MusicOrganizer.Models;
+@{
+  Layout = "_Layout";
+}
+
+<h1>@Model["records"].RecordName</h1>

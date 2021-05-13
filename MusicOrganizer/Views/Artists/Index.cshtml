@@ -8,12 +8,8 @@
 }
 else
 {
-  <ol>
   @foreach (Artists artist in Model)
     {
-      <li>
-        <h2><a href="/artists/@artist.Id">@artist.ArtistName</a></h2>
-      </li>
+        <a href="/artists/@artist.Id"><button class="btn btn-outline-info btn-sm">@artist.ArtistName</button></a>
     }
-  </ol>
 }
